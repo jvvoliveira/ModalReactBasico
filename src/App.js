@@ -15,7 +15,6 @@ const App = () => {
   }
 
   const closeDropdown = event => {
-    if (!modalRef.current) return; //se clicar dentro do modal, NÃO faz nada
     event.stopPropagation(); //impede de executar listeners dos filhos
     const contain = modalRef.current.contains(event.target);
     if (!contain) { //se clicar fora do modal, ele DESaparece
@@ -36,5 +35,3 @@ const App = () => {
 }
 
 export default App;
-
-//são mais simples e perfomáticos. Código mais limpo
