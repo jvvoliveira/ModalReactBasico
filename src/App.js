@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './App.css';
-import Modal from './Component/Modal';
+import Modal from './Component/Modal/Modal';
 
 const App = () => {
 
